@@ -5,7 +5,7 @@ import variables from 'styles/variables'
 import Message from './Message'
 
 const StyledMessageBody = styled.div`
-  background-color: ${helpers.hexToRgba(variables.colors.darkBackground, 0.85)};
+  background-color: ${helpers.hexToRgba(variables.colors.dark, 0.85)};
   height: calc(100% - (65px + 90px));
   width: 100%;
   display: flex;

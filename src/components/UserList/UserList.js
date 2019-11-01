@@ -10,7 +10,7 @@ const StyledUserList = styled.div`
   width: 30%;
   min-width: 150px;
   max-width: 275px;
-  background-color: ${helpers.hexToRgba(variables.colors.darkBackground, 0.7)};
+  background-color: ${helpers.hexToRgba(variables.colors.dark, 0.7)};
 `
 
 const UserList = ({ users, setUser }) => {

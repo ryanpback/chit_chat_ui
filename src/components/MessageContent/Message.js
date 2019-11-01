@@ -28,10 +28,7 @@ const Message = ({ message, positionClass, sender }) => {
       justify-content: flex-start;
 
       .message-wrapper {
-        background-color: ${helpers.hexToRgba(
-          variables.colors.darkBackground,
-          0.6
-        )};
+        background-color: ${helpers.hexToRgba(variables.colors.dark, 0.6)};
       }
     }
 

@@ -1,0 +1,55 @@
+.homepage {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: $themeNoGradient;
+  background: $themeGradient;
+
+  .app-title {
+    margin-top: 20px;
+    color: $white;
+    text-align: center;
+    font-weight: 100;
+    font-size: calc(40px + 2vmin);
+  }
+}
+
+.login-wrapper {
+  width: 400px;
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .input-wrapper {
+    .form-label {
+      color: $white;
+    }
+  }
+
+  input {
+    text-align: center;
+    color: $white;
+  }
+
+  .input-separator {
+    border-top: 1px solid $light-grey;
+  }
+
+  .login-submit {
+    margin-top: 40px;
+    background-color: rgba($dark, 0.2);
+    color: $white;
+
+    &:hover {
+      background-color: rgba($dark, 0.4);
+    }
+  }
+
+  .login-register-link {
+    a {
+      color: darken($primary, 10%);
+    }
+  }
+}

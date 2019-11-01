@@ -1,0 +1,58 @@
+.registration {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: $themeNoGradient;
+  background: $themeGradientReverse;
+
+  .app-title {
+    margin-top: 20px;
+    color: $dark;
+    text-align: center;
+    font-weight: 100;
+    font-size: calc(40px + 2vmin);
+  }
+
+  .register-wrapper {
+    width: 500px;
+    max-width: 100%;
+    margin: 50px auto 0;
+
+    .input-wrapper {
+      .form-label {
+        color: $dark;
+      }
+
+      &:focus-within {
+        .form-label {
+          font-size: 0.6rem;
+        }
+      }
+    }
+
+    input {
+      text-align: left;
+      color: $dark;
+    }
+
+    .input-separator {
+      border-top: 1px solid $dark;
+    }
+
+    .registration-submit {
+      margin-top: 40px;
+      background-color: rgba($white, 0.2);
+      color: $dark;
+
+      &:hover {
+        background-color: rgba($white, 0.4);
+      }
+    }
+
+    .login-register-link {
+      a {
+        color: lighten($dark, 10%);
+      }
+    }
+  }
+}

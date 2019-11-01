@@ -1,0 +1,12 @@
+$primary:                 #34FFF5;
+$dark:                    #1F242F;
+$white:                   #FFF;
+$black:                   #000;
+$grey:                    #A2A2A2;
+$light-grey:              #F4F5F5;
+$themeNoGradient:         rgb(31,36,47);
+$themeGradient:           linear-gradient(149deg, rgba(31,36,47,1) 0%, rgba(40,135,136,1) 71%, rgba(52,255,245,1) 100%);
+$themeGradientReverse:    linear-gradient(149deg, rgba(52,255,245,1) 00%, rgba(40,135,136,1) 71%, rgba(31,36,47,1) 100%);
+
+$dark-shadow:      0px 0px 9px 3px rgba(0, 0, 0, 0.075);
+$light-shadow:     0px 0px 9px 3px $grey;

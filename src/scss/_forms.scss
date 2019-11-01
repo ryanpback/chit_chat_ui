@@ -1,0 +1,58 @@
+input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 0px 10px;
+  font-size: 1.125rem;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.input-wrapper {
+  height: 40px;
+  padding: 10px 0;
+
+  @include flex(row, space-between, center);
+}
+
+.form-label {
+  font-size: 1.25rem;
+  white-space: nowrap;
+
+  @include transition(font-size, 100);
+}
+
+.input-separator {
+  margin: 5px 0;
+}
+
+.form-button {
+  width: 100%;
+  height: 50px;
+  border-radius: 0;
+  font-size: 18px;
+
+  @include transition(background-color);
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba($primary, .25);
+  }
+}
+
+.login-register-link {
+  display: block;
+  margin-top: 10px;
+  color: $white;
+
+  a {
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

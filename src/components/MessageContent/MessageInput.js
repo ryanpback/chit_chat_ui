@@ -13,17 +13,14 @@ const StyledMessageInput = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: ${helpers.hexToRgba(variables.colors.darkBackground, 0.85)};
+  background-color: ${helpers.hexToRgba(variables.colors.dark, 0.85)};
 
   .input-holder {
     position: relative;
     width: 95%;
     min-height: 50px;
     border-radius: 5px;
-    background-color: ${helpers.hexToRgba(
-      variables.colors.darkBackground,
-      0.7
-    )};
+    background-color: ${helpers.hexToRgba(variables.colors.dark, 0.7)};
     border: 1px solid ${helpers.hexToRgba(variables.colors.primary, 0.5)};
   }
 

@@ -5,7 +5,7 @@ import helpers from 'helpers'
 import { SharedHeaderStyles } from 'styles/SharedStyles'
 
 const StyledMessageHeader = styled(SharedHeaderStyles)`
-  background-color: ${helpers.hexToRgba(variables.colors.darkBackground, 0.9)};
+  background-color: ${helpers.hexToRgba(variables.colors.dark, 0.9)};
   width: 100%;
 `
 

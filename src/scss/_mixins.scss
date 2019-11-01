@@ -1,0 +1,9 @@
+@mixin transition($property: 'all', $speed: '300') {
+  transition: $property #{$speed}ms ease-in-out;
+}
+@mixin flex($direction: 'row', $justify-content: 'flex-start' , $align-items: 'flex-start') {
+  display:          flex;
+  flex-direction:   $direction;
+  justify-content:  $justify-content;
+  align-items:      $align-items;
+}

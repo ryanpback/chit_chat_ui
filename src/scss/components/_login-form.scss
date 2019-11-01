@@ -1,0 +1,5 @@
+.login-form-wrapper {
+  .login-submit {
+    @extend .form-button;
+  }
+}

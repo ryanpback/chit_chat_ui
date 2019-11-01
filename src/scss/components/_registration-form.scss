@@ -1,0 +1,5 @@
+.registration-form-wrapper {
+  .registration-submit {
+    @extend .form-button;
+  }
+}
