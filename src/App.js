@@ -1,8 +1,8 @@
 import React from 'react'
 import { Route, BrowserRouter as Router } from 'react-router-dom'
-import HomePage from 'components/Dashboard/Homepage'
-import Register from 'components/Dashboard/Register'
-import Messages from 'components/Messaging/MessageHub'
+import HomePage from 'pages/Homepage'
+import Register from 'pages/Register'
+import Messages from 'pages/Messages'
 
 const App = () => {
   return (

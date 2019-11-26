@@ -1,0 +1,9 @@
+.Messages {
+  height: 100%;
+
+  .message-center {
+    height: 100%;
+
+    @include flex;
+  }
+}

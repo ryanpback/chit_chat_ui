@@ -1,0 +1,6 @@
+.Conversations {
+  width: $conversations-width;
+  min-width: $conversations-width;
+  height: 100%;
+  background-color: lighten($dark, 10%);
+}

@@ -10,6 +10,7 @@
   @include flex(row, space-between, center);
 
   h1 {
+    font-weight: 100;
     color: $white;
   }
 }
@@ -25,8 +26,18 @@
     a {
       height: 100%;
       list-style: none;
+      margin: 0 15px;
+      color: $white;
 
       @include flex(row, center, center);
+
+      &:last-of-type {
+        margin: 0;
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
-import React from './node_modules/react'
-import axios from './node_modules/axios'
-import { withRouter } from './node_modules/react-router-dom'
+import React from 'react'
+import axios from 'axios'
+import { withRouter } from 'react-router-dom'
 
 class RegistrationForm extends React.Component {
   state = {
@@ -35,7 +35,7 @@ class RegistrationForm extends React.Component {
 
   render() {
     return (
-      <div className="registration-form-wrapper">
+      <div className="Registration-form-wrapper">
         <form
           className="registration-form"
           autoComplete="off"

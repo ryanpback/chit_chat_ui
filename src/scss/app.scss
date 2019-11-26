@@ -6,8 +6,11 @@
 // pages
 @import 'pages/homepage';
 @import 'pages/registration';
+@import 'pages/messages';
 
 // components
-@import 'components/nav';
-@import 'components/login-form';
-@import 'components/registration-form'
+@import 'components/nav/nav';
+@import 'components/forms/login-form';
+@import 'components/forms/registration-form';
+@import 'components/messaging/conversations';
+@import 'components/messaging/conversation';

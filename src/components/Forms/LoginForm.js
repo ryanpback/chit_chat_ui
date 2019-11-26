@@ -35,7 +35,7 @@ class LoginForm extends React.Component {
 
   render() {
     return (
-      <div className="login-form-wrapper">
+      <div className="Login-form-wrapper">
         <form
           className="registration-form"
           autoComplete="off"

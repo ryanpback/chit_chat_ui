@@ -1,0 +1,5 @@
+.Conversation {
+  width: calc(100% - #{$conversations-width});
+  height: 100%;
+  background-color: darken($dark, 10%);
+}
