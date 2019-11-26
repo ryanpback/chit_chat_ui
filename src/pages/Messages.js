@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from 'components/Nav/Nav'
 import Conversations from 'components/Messaging/Conversations'
-import Conversation from 'components/Messaging/Conversation'
+import TalkBlock from 'components/Messaging/TalkBlock'
 
 const Messages = () => {
   return (
@@ -10,7 +10,7 @@ const Messages = () => {
 
       <div className="message-center">
         <Conversations />
-        <Conversation />
+        <TalkBlock />
       </div>
     </div>
   )

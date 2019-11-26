@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Conversation = () => {
+const TalkBlock = () => {
   return (
-    <div className="Conversation">
+    <div className="Talk-block">
       <div className="container"></div>
     </div>
   )
 }
 
-export default Conversation
+export default TalkBlock
