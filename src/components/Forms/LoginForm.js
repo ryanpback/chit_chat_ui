@@ -35,35 +35,35 @@ class LoginForm extends React.Component {
 
   render() {
     return (
-      <div className='login-form-wrapper'>
+      <div className="login-form-wrapper">
         <form
-          className='registration-form'
-          autoComplete='off'
+          className="registration-form"
+          autoComplete="off"
           onSubmit={e => this.login(e)}
         >
-          <div className='input-wrapper'>
-            <i className='fa fa-envelope-o form-label' aria-hidden='true'></i>
+          <div className="input-wrapper">
+            <i className="fa fa-envelope-o form-label" aria-hidden="true"></i>
 
             <input
-              id='email'
-              type='text'
+              id="email"
+              type="text"
               onChange={e => this.inputOnChange(e)}
             />
           </div>
 
-          <div className='input-separator'></div>
+          <div className="input-separator"></div>
 
-          <div className='input-wrapper'>
-            <i className='fa fa-lock form-label' aria-hidden='true'></i>
+          <div className="input-wrapper">
+            <i className="fa fa-lock form-label" aria-hidden="true"></i>
 
             <input
-              id='password'
-              type='password'
+              id="password"
+              type="password"
               onChange={e => this.inputOnChange(e)}
             />
           </div>
 
-          <button type='submit' className='btn login-submit'>
+          <button type="submit" className="btn login-submit">
             Log In
           </button>
         </form>

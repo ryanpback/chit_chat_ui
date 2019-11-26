@@ -1,6 +1,6 @@
-import React from 'react'
-import axios from 'axios'
-import { withRouter } from 'react-router-dom'
+import React from './node_modules/react'
+import axios from './node_modules/axios'
+import { withRouter } from './node_modules/react-router-dom'
 
 class RegistrationForm extends React.Component {
   state = {
@@ -35,70 +35,70 @@ class RegistrationForm extends React.Component {
 
   render() {
     return (
-      <div className='registration-form-wrapper'>
+      <div className="registration-form-wrapper">
         <form
-          className='registration-form'
-          autoComplete='off'
+          className="registration-form"
+          autoComplete="off"
           onSubmit={e => this.registerUser(e)}
         >
-          <div className='input-wrapper'>
-            <span className='form-label'>Name</span>
+          <div className="input-wrapper">
+            <span className="form-label">Name</span>
 
             <input
-              id='name'
-              type='text'
+              id="name"
+              type="text"
               onChange={e => this.inputOnChange(e)}
             />
           </div>
 
-          <div className='input-separator'></div>
+          <div className="input-separator"></div>
 
-          <div className='input-wrapper'>
-            <span className='form-label'>Username</span>
+          <div className="input-wrapper">
+            <span className="form-label">Username</span>
             <input
-              id='userName'
-              type='text'
+              id="userName"
+              type="text"
               onChange={e => this.inputOnChange(e)}
             />
           </div>
 
-          <div className='input-separator'></div>
+          <div className="input-separator"></div>
 
-          <div className='input-wrapper'>
-            <span className='form-label'>Email</span>
+          <div className="input-wrapper">
+            <span className="form-label">Email</span>
 
             <input
-              id='email'
-              type='text'
+              id="email"
+              type="text"
               onChange={e => this.inputOnChange(e)}
             />
           </div>
 
-          <div className='input-separator'></div>
+          <div className="input-separator"></div>
 
-          <div className='input-wrapper'>
-            <span className='form-label'>Confirm Email</span>
+          <div className="input-wrapper">
+            <span className="form-label">Confirm Email</span>
 
             <input
-              id='emailConfirm'
-              type='text'
+              id="emailConfirm"
+              type="text"
               onChange={e => this.inputOnChange(e)}
             />
           </div>
 
-          <div className='input-separator'></div>
+          <div className="input-separator"></div>
 
-          <div className='input-wrapper'>
-            <span className='form-label'>Password</span>
+          <div className="input-wrapper">
+            <span className="form-label">Password</span>
 
             <input
-              id='password'
-              type='password'
+              id="password"
+              type="password"
               onChange={e => this.inputOnChange(e)}
             />
           </div>
 
-          <button type='submit' className='btn registration-submit'>
+          <button type="submit" className="btn registration-submit">
             Register
           </button>
         </form>
