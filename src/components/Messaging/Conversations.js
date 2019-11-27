@@ -9,7 +9,7 @@ class Conversations extends React.Component {
           headerText="Messages"
           placeholderText="Search"
           convHandler={this.props.newConvHandler}
-          iconClass="pencil-square-o"
+          faClass="pencil-square-o"
         />
       </div>
     )

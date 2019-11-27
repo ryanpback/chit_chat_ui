@@ -8,7 +8,7 @@ const NewConversation = props => {
         headerText="New Conversation"
         placeholderText="Find a friend"
         convHandler={props.newConvHandler}
-        iconClass="times"
+        faClass="times"
       />
     </div>
   )

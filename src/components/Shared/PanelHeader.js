@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const PanelHeader = props => {
   return (
@@ -8,7 +9,7 @@ const PanelHeader = props => {
           <span className="header">{props.headerText}</span>
 
           <i
-            className={`fa fa-${props.iconClass}`}
+            className={`fa fa-${props.faClass}`}
             aria-hidden="true"
             onClick={props.convHandler}
           ></i>
@@ -26,6 +27,12 @@ const PanelHeader = props => {
       </div>
     </div>
   )
+}
+
+PanelHeader.propTypes = {
+  headerText: PropTypes.string,
+  faClass: PropTypes.string,
+  convHandler: PropTypes.func
 }
 
 export default PanelHeader

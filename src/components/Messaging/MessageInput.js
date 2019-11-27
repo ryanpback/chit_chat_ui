@@ -23,6 +23,7 @@ class MessageInput extends React.Component {
   }
 
   componentDidMount() {
+    this.inputRef.current.focus()
     this.getInputHeight()
     document.addEventListener('keydown', e => {
       this.getInputHeight()

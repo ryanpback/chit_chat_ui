@@ -21,6 +21,10 @@
       padding: 10px;
       font-size: 1.125rem;
       line-height: 1.125rem;
+
+      &:focus {
+        outline: none;
+      }
     }
   }
 }
