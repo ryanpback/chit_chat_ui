@@ -1,0 +1,11 @@
+.NewConversation {
+  .conversation-panel-header {
+    i {
+      margin-top: 4px;
+      font-size: 2rem;
+
+      @include fontStroke(6px, $conversations-background);
+    }
+  }
+
+}

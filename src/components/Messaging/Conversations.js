@@ -3,15 +3,20 @@ import React from 'react'
 class Conversations extends React.Component {
   render() {
     return (
-      <div className="Conversations">
-        <div className="conversation-header">
+      <div className="Conversations conversation-panel">
+        <div className="conversation-panel-header">
           <div className="container">
             <span className="header">Messages</span>
 
-            <i className="fa fa-pencil-square-o" aria-hidden="true"></i>
+            <i
+              className="fa fa-pencil-square-o"
+              aria-hidden="true"
+              onClick={this.props.newConvHandler}
+            ></i>
           </div>
         </div>
-        <div className="search-messages">
+
+        <div className="panel-search">
           <div className="container">
             <div className="input-wrapper">
               <i className="fa fa-search" aria-hidden="true"></i>

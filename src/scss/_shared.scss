@@ -1,0 +1,68 @@
+.conversation-panel {
+  width: $conversations-width;
+  min-width: $conversations-width;
+  height: 100%;
+  background-color: $conversations-background;
+  border-right: 1px solid rgba($primary, 0.3);
+}
+
+.conversation-panel-header {
+  width: 100%;
+  border-bottom: .5px solid rgba($primary, 0.3);
+
+  .container {
+    height: 100%;
+    margin: 10px 0;
+    @include flex(row, space-between, center);
+  }
+
+  .header {
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+
+  i {
+    margin-top: 9px;
+    color: $white;
+    font-size: 1.225rem;
+
+    @include transition;
+    @include fontStroke(.75px, $conversations-background);
+
+    &:hover {
+      cursor: pointer;
+      color: rgba($white, 0.7);
+    }
+  }
+}
+
+.panel-search {
+  border-bottom: .5px solid rgba($primary, 0.3);
+
+  .container {
+    margin: 5px 0;
+    @include flex(row, center, center);
+  }
+
+  .input-wrapper {
+    width: 100%;
+
+    i {
+      color: $white;
+      font-size: 1.125rem;
+
+      @include fontStroke(2px, $conversations-background);
+    }
+
+    input {
+      color: $white;
+      font-weight: 100;
+
+      &::placeholder {
+        color: rgba($white, 0.6);
+        font-weight: 100;
+      }
+    }
+  }
+}
