@@ -2,7 +2,7 @@
   height: 100%;
 
   .message-center {
-    height: 100%;
+    height: calc(100% - #{$nav-height});
 
     @include flex;
   }

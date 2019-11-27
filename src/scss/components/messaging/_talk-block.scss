@@ -1,0 +1,9 @@
+.Talk-block {
+  width: calc(100% - #{$conversations-width});
+  height: 100%;
+  background-color: $talk-block-background;
+
+  .talk-block-wrapper {
+    height: 100%;
+  }
+}
