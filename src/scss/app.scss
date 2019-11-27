@@ -2,7 +2,6 @@
 @import 'mixins';
 @import 'defaults';
 @import 'forms';
-@import 'shared';
 
 // pages
 @import 'pages/homepage';
@@ -18,3 +17,4 @@
 @import 'components/messaging/talk-block';
 @import 'components/messaging/message-input';
 @import 'components/messaging/message-display';
+@import 'components/shared/shared';

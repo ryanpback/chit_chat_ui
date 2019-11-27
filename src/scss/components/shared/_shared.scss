@@ -1,4 +1,4 @@
-.conversation-panel {
+.panel {
   width: $conversations-width;
   min-width: $conversations-width;
   height: 100%;
@@ -6,13 +6,18 @@
   border-right: 1px solid rgba($primary, 0.3);
 }
 
-.conversation-panel-header {
+.PanelHeader {
+  width: 100%;
+}
+
+.panel-header-wrapper {
   width: 100%;
   border-bottom: .5px solid rgba($primary, 0.3);
 
   .container {
     height: 100%;
-    margin: 10px 0;
+    margin-bottom: 10px;
+    padding-top: 10px;
     @include flex(row, space-between, center);
   }
 
