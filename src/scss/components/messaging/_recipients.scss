@@ -1,0 +1,31 @@
+.Recipients {
+  margin-top: 30px;
+
+  .recipients-header {
+    @include flex(row, space-between, center);
+
+    .header {
+      color: $white;
+      font-weight: 100;
+      font-size: 2rem;
+    }
+
+    .start-conversation {
+      @extend .form-button;
+
+      height: 40px;
+      width: auto;
+      background-color: rgba($primary, 0.8);
+      color: darken($primary, 60%);
+      border-radius: 10px;
+
+      &:hover {
+        background-color: rgba($primary, 0.6);
+      }
+    }
+  }
+
+  .recipients-list {
+    margin-top: 20px;
+  }
+}

@@ -10,8 +10,8 @@ class Messages extends React.Component {
   }
 
   startNewConvo = () => {
-    this.setState(state => ({
-      newConvo: !state.newConvo
+    this.setState(prevState => ({
+      newConvo: !prevState.newConvo
     }))
   }
 

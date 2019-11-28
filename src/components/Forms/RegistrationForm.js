@@ -30,7 +30,7 @@ class RegistrationForm extends React.Component {
   registerUser = e => {
     e.preventDefault()
 
-    axios.post('http://localhost:3001/users', this.state.newUser)
+    axios.post('/users', this.state.newUser)
   }
 
   render() {

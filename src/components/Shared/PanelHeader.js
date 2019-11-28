@@ -21,7 +21,14 @@ const PanelHeader = props => {
           <div className="input-wrapper">
             <i className="fa fa-search" aria-hidden="true"></i>
 
-            <input type="text" placeholder={props.placeholderText} />
+            <input
+              value={props.searchString}
+              onChange={e => {
+                props.searchHandler(e)
+              }}
+              type="text"
+              placeholder={props.placeholderText}
+            />
           </div>
         </div>
       </div>

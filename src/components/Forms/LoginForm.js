@@ -24,7 +24,7 @@ class LoginForm extends React.Component {
     }
 
     axios
-      .post('http://localhost:3001/login', loginData)
+      .post('/login', loginData)
       .then(res => {
         this.props.history.push('/register')
       })

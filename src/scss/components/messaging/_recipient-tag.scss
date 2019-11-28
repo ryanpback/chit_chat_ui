@@ -1,0 +1,59 @@
+.RecipientTag {
+  margin: 0 10px 5px 0;
+  display: inline-block;
+  height: 40px;
+  border: 1px solid rgba($primary, 0.5);
+  background-color: $conversations-background;
+  border-radius: 5px;
+  overflow: hidden;
+
+  .recipient-tag-wrapper {
+    height: 100%;
+
+    @include flex(row, flex-start, center);
+  }
+
+  .user-tag-image {
+    height: 100%;
+    margin: 0 10px 0 10px;
+    width: 20px;
+    @include flex(row, center, center);
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .user-tag-name {
+    height: 100%;
+    margin-right: 20px;
+    @include flex(row, center, center);
+
+    span{
+      color: $white;
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+
+  }
+
+  .remove-recipient {
+    width: 40px;
+    height: 100%;
+    background-color: $primary;
+
+    @include transition(background-color);
+    @include flex(row, center, center);
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba($primary, 0.6);
+    }
+
+    i {
+      color: darken($primary, 60%);
+      font-size: 1.5rem;
+    }
+  }
+}
