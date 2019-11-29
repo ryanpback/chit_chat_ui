@@ -1,7 +1,7 @@
 .RecipientTag {
   margin: 0 10px 5px 0;
   display: inline-block;
-  height: 40px;
+  height: 35px;
   border: 1px solid rgba($primary, 0.5);
   background-color: $conversations-background;
   border-radius: 5px;
@@ -15,8 +15,7 @@
 
   .user-tag-image {
     height: 100%;
-    margin: 0 10px 0 10px;
-    width: 20px;
+    width: 30px;
     @include flex(row, center, center);
 
     img {
@@ -27,19 +26,19 @@
 
   .user-tag-name {
     height: 100%;
-    margin-right: 20px;
+    margin: 0 20px 0 10px;
     @include flex(row, center, center);
 
     span{
       color: $white;
-      font-size: 1.5rem;
+      font-size: 1.125rem;
       font-weight: 300;
     }
 
   }
 
   .remove-recipient {
-    width: 40px;
+    width: 30px;
     height: 100%;
     background-color: $primary;
 
@@ -53,7 +52,7 @@
 
     i {
       color: darken($primary, 60%);
-      font-size: 1.5rem;
+      font-size: 1.25rem;
     }
   }
 }

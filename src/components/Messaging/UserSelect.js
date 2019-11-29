@@ -7,6 +7,7 @@ const UserSelect = ({ user, addRecipientHandler }) => {
       onClick={() => {
         addRecipientHandler(user)
       }}
+      tabIndex="0"
     >
       <div className="user-select-wrapper container">
         <div className="user-image">

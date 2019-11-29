@@ -1,7 +1,7 @@
 import React from 'react'
 import RecipientTag from './RecipientTag'
 
-const Recipients = ({ recipients }) => {
+const Recipients = ({ recipients, removeRecipientHandler }) => {
   return (
     <div className="Recipients">
       <div className="container">
@@ -15,7 +15,11 @@ const Recipients = ({ recipients }) => {
       <div className="recipients-list">
         <div className="container list">
           {recipients.map(u => (
-            <RecipientTag key={u.email} user={u} />
+            <RecipientTag
+              key={u.email}
+              user={u}
+              removeRecipientHandler={removeRecipientHandler}
+            />
           ))}
         </div>
       </div>

@@ -4,7 +4,7 @@
 
   @include transition(background-color);
 
-  &:hover {
+  &:hover, &:focus {
     cursor: pointer;
     background-color: rgba($white, 0.4);
   }

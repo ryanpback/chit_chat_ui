@@ -30,7 +30,7 @@ class NewConversation extends React.Component {
         this.setState({ searching: true })
       }
 
-      if (searchString.length <= 3) {
+      if (searchString.length < 3) {
         return
       }
 
@@ -57,12 +57,23 @@ class NewConversation extends React.Component {
     }))
   }
 
+  removeRecipient = user => {
+    this.setState(prevState => ({
+      recipients: prevState.recipients.filter(u => u.id !== user.id)
+    }))
+  }
+
   render() {
     let recipients = ''
     let noResults = ''
 
     if (this.state.recipients.length > 0) {
-      recipients = <Recipients recipients={this.state.recipients} />
+      recipients = (
+        <Recipients
+          recipients={this.state.recipients}
+          removeRecipientHandler={this.removeRecipient}
+        />
+      )
     }
 
     if (

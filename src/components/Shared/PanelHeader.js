@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import PropTypes from 'prop-types'
 
 const PanelHeader = props => {
+  const searchRef = useRef(null)
+  useEffect(() => {
+    searchRef.current.focus()
+  })
+
   return (
     <div className="PanelHeader">
       <div className="panel-header-wrapper">
@@ -22,6 +27,7 @@ const PanelHeader = props => {
             <i className="fa fa-search" aria-hidden="true"></i>
 
             <input
+              ref={searchRef}
               value={props.searchString}
               onChange={e => {
                 props.searchHandler(e)
