@@ -1,9 +1,26 @@
 .Messages {
   height: 100%;
 
+  .messaging {
+    height: 100%;
+  }
+
   .message-center {
     height: calc(100% - #{$nav-height});
 
     @include flex;
+  }
+
+  .Loading {
+    height: 100%;
+    width: 100%;
+    background-color: $dark;
+
+    @include flex(row, center, center);
+
+    i.fa-spinner {
+      font-size: 200px;
+      color: $primary;
+    }
   }
 }

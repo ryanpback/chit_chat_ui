@@ -26,7 +26,7 @@ class LoginForm extends React.Component {
     axios
       .post('/login', loginData)
       .then(res => {
-        this.props.history.push('/register')
+        this.props.history.push('/messages', { user: res.data.user })
       })
       .catch(err => {
         console.log(err)
